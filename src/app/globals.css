@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080f1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee44;
+}
+
+/* Custom selection color */
+::selection {
+  background: #06b6d444;
+  color: #ffffff;
+}
+
+/* Smooth transitions for interactive elements */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Textarea resize handle color */
+textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #1e3a5f #080f1e;
+}
